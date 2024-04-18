@@ -1,0 +1,19 @@
+.product{
+    width: 22%;
+    margin: 20px;
+    img{
+        /* width: 100%; */
+        height: 200px;
+        
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    width: 25%;
+}
