@@ -1,0 +1,18 @@
+.productImg{
+    height: 150px;
+    object-fit: contain;
+}
+
+.cardHi{
+    min-height: 385px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+/* .desc{
+    overflow: hidden;
+} */
+
+.card-css{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(509px,1fr));
+}
