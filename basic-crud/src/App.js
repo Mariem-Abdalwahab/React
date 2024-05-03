@@ -8,7 +8,7 @@ import Products from './Pages/Products';
 import Catigories from './Pages/Catigories';
 import AddProduct from './Pages/AddProduct';
 import ViewProduct from './Pages/ViewProduct';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -22,17 +22,23 @@ function App() {
       <div className='col-10'>
         <Routes>
             <Route path='/' element={<Home></Home>}/>
-            <Route  path='Products' element={<Products/>}>
-              
+              <Route  path='Products' element={
+                <>
+                <Outlet/>
+                </>
+              }>
+              <Route  path='' element={<Products/>}/>
+              <Route  path='catigories' element={<Catigories/>}/>
+              <Route  path='AddProduct' element={<AddProduct/>}/>
+              <Route  path=':itemid' element={<ViewProduct/>}/>
             </Route>
-            <Route  path='catigories' element={<Catigories/>}/>
-            <Route  path='products/AddProduct' element={<AddProduct/>}/>
-            <Route  path='products/:itemid' element={<ViewProduct/>}/>
+            
             
         </Routes>
       </div>
 
       </div>
+    
       </>
     </div>
   );

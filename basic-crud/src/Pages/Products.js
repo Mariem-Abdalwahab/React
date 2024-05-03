@@ -1,6 +1,7 @@
 import { Button } from "bootstrap";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Swal from 'sweetalert2';
 
@@ -78,6 +79,7 @@ function Products(){
                 </tbody>
                 
             </table>
+            <Outlet/>
         </>
     )
 }
