@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+button{
+    display: block;
+    margin: 15px 0;
+    background-color: rgb(155, 182, 251);
+    color: rgb(240, 248, 255);
+    font-weight: 400;
+    border: none;
+    border-radius: 12px;
+    padding: 13px;
+    cursor: pointer;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+input{
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 10px 12px;
+    outline: none;
+    
+}

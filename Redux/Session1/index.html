@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    d
+    <div class="container">
+        <div class="left">
+            <h1>Action</h1>
+            <input type="number" class="number" value="0">
+            <button class="withdrowMoney">withdraw_money</button>
+            <button class="depositeMoney">deposite_money</button>
+        </div>
+        <div class="rigth">
+            <h1>State</h1>
+            <span class="amount"></span>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.4.1/redux-thunk.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/custom.js"></script>
+    <script src="js/testmyredux.js"></script>
 </body>
 </html>
