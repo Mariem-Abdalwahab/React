@@ -22,7 +22,7 @@ export const productSlice = createSlice({
     extraReducers:(builder) =>{
         builder.addCase(fetchProducts.fulfilled, (state,action)=>{ // like switch case
             return action.payload;
-            console.log(action);
+            
         })
     }
 })
